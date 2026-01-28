@@ -1,0 +1,30 @@
+body{
+    background-color: #014f60;
+
+}
+.hero{
+    text-align: center;
+    color: #000000;
+    font-family: 'Arial', sans-serif;
+    padding: 50px 20px;
+}
+.selfie{
+    display: block;
+    width: 35vw;
+    height: 35vw;
+    border-radius:50%;
+    object-fit: cover;
+    border: 5px solid #000000;
+    margin: 20px auto;
+}
+
+
+skillscard{
+    background-color: #01323e;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 400px;
+}
