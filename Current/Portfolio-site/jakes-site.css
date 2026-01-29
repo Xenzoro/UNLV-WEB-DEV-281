@@ -4,13 +4,13 @@
     box-sizing : border-box;
 }
 body{
-    font-family: 'roboto Mono', monospace;
-    background-color: #014f60;
+    font-family: 'Nunito Sans', monospace;
+    background-color: #27add8;
 }
 
 .navbar{
     align-content: center;
-    background-color: #006ab8;
+    background-color: #090808;
     color: #000000;
     width: 100%;
     height: 8vh;
@@ -21,33 +21,78 @@ body{
     justify-content: center;
     align-items: center;
 
+
 }
 .hero{
+    background-color: #28282b;
     text-align: center;
-    color: #000000;
-    font-family: 'roboto Mono', sans-serif;
     padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #c3d6dd;
+    height: 50vh;
+    align-content: center;
+
+
 }
+.hero h1{
+
+    font-size: clamp(2rem,6vw,4rem);
+    max-width: 90ch;
+    width: 90%;
+    margin: 0.5rem auto;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+.hero p{
+
+    font-size: clamp(2rem, 2.5vw, 2rem);
+    max-width: 80ch;
+    width: 85%;
+    margin: 0 auto;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+.selfie{
+    display: block;
+    width: clamp(450px, 45vw, 550px);
+    aspect-ratio: 1/1;
+    border-radius:50%;
+    object-fit: cover;
+    border: 5px solid #000000;
+    margin: 20px auto;
+}
+
 .aboutme{
     height: 40vh;
-    min-height: 300px;
     text-align: center;
-    background-color: #01323e;
-    text-align: center;
+    background-color: #27add8;
     overflow: auto;
 }
 .aboutmeheader{
-    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 
 }
 .aboutmecontent{
-    /*font-size: 1rem;*/
-    margin: auto 3rem;
-    font-size: 1.5rem;
-    /*font-family: 'roboto Mono'*/
-
+    background-color: #28282b;
+    height: 20vh;
+    border-radius: 15px;
+    align-content: center;
+    color: #c3d6dd;
+    font-size: clamp(2rem, 2.5vw, 2rem);
+    max-width: 100ch;
+    width: 85%;
+    margin: 0 auto;
+    white-space: normal;
+    overflow-wrap: break-word;
 }
-
+.aboutmecontent p{
+    padding: 3rem;
+}
 
 .skills{
     align-content: center;
@@ -55,18 +100,8 @@ body{
     margin: 0 auto;
     text-align: center;
 }
-h2{
-    font-size: 3em;
-}
-.selfie{
-    display: block;
-    width: 35vw;
-    height: 35vw;
-    border-radius:50%;
-    object-fit: cover;
-    border: 5px solid #000000;
-    margin: 20px auto;
-}
+
+
 
 .skillscontainer{
     display: flex;
@@ -81,7 +116,7 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #01323e;
+    background-color: #046a81;
     border: 1px solid #000000;
     border-radius: 10px;
     padding: 20px;
@@ -106,7 +141,7 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #01323e;
+    background-color: #202020;
 
 }
 .favgames{
@@ -119,4 +154,9 @@ h2{
     flex-direction: column;
     align-items: center;
     background-color: #01323e;
+}
+@media (max-width: 1000px){
+    .aboutmecontent{
+        height: 500px;
+    }
 }
