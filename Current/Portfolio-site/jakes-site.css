@@ -29,23 +29,29 @@ body{
     padding: 50px 20px;
 }
 .aboutme{
-    text-align: center;
-    /*align-content: center;*/
-    height: 50vh;
+    height: 40vh;
+    min-height: 300px;
     text-align: center;
     background-color: #01323e;
     text-align: center;
+    overflow: auto;
 }
 .aboutmeheader{
-    text-align: center;
-    color: #faf3f3;
-    background-color: #1babcd;
+    margin-bottom: 50px;
+
+}
+.aboutmecontent{
+    /*font-size: 1rem;*/
+    margin: auto 3rem;
+    font-size: 1.5rem;
+    /*font-family: 'roboto Mono'*/
+
 }
 
 
 .skills{
     align-content: center;
-    height: 50vh;
+    height: auto;
     margin: 0 auto;
     text-align: center;
 }
