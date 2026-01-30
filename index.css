@@ -121,7 +121,7 @@ body{
     text-transform: uppercase;
     font-size: clamp(2rem, 2.5vw, 3rem);
     margin-top: 0;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 
 /* Extra top margin for about me header to create separation from hero section */
