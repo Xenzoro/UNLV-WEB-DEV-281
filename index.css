@@ -262,24 +262,28 @@ body{
 }
 
 
-@media (max-width: 1000px){
-    .about-me-content{
+@media (max-width: 1000px) {
+    .about-me-content {
         height: auto;
     }
+
     .hero {
         height: auto;
     }
-    .skills{
+
+    .skills {
         height: auto;
     }
-    .fav-songs, .fav-games{
+
+    .fav-songs, .fav-games {
         height: auto;
 
     }
+
     .fav-games-header, .music-header, .skill-header, .about-me-header {
         margin-bottom: 2rem;
     }
-
+}
     /* Start reducing navbar at medium viewport */
     /*.navbar{*/
     /*    font-size: 1rem;*/
