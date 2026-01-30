@@ -77,7 +77,7 @@ body{
 }
 .hero p{
 
-    font-size: clamp(2rem, 2.5vw, 2rem);
+    font-size: clamp(1rem, 2.5vw, 2rem);
     max-width: 80ch;
     width: 85%;
     margin: 0 auto;
@@ -118,7 +118,7 @@ body{
     border-radius: 15px;
     align-content: center;
     color: #c3d6dd;
-    font-size: clamp(2rem, 2.5vw, 2rem);
+    font-size: clamp(1rem, 2.5vw, 2rem);
     max-width: 100ch;
     width: 85%;
     margin: 0 auto;
