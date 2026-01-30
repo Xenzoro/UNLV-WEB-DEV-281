@@ -272,6 +272,9 @@ body{
     .skills{
         height: auto;
     }
+    .navbar{
+        height: auto;
+    }
     .fav-songs, .fav-games{
         height: auto;
 
