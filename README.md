@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing my skills, favorite music, gam
 
 ## 🌐 Live Demo
 
-Visit the live site: [GitHub Pages URL]
+Visit the live site: [https://xenzoro.github.io/XENSITE/]
 
 ## 📋 Table of Contents
 
