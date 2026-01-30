@@ -272,9 +272,6 @@ body{
     .skills{
         height: auto;
     }
-    .navbar{
-        height: auto;
-    }
     .fav-songs, .fav-games{
         height: auto;
 
@@ -286,7 +283,7 @@ body{
     /* Start reducing navbar at medium viewport */
     .navbar{
         height: auto;
-        min-height: 10vh;
+        min-height: 15vh;
         padding: 8px 0;
     }
 
