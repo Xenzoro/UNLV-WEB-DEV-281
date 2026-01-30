@@ -61,7 +61,7 @@ body{
     flex-direction: column;
     justify-content: center;
     color: #c3d6dd;
-    height: 60vh;
+    height: 80vh;
     align-content: center;
 
 
@@ -297,7 +297,7 @@ body{
     }
 
     .navbar-container a{
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding: 8px 15px;
     }
 }
