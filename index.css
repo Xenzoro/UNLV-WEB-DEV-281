@@ -283,7 +283,7 @@ body{
     /* Start reducing navbar at medium viewport */
     .navbar{
         height: auto;
-        min-height: 15vh;
+        min-height: 12vh;
         padding: 8px 0;
     }
 
