@@ -212,7 +212,7 @@ This project is open source and available for personal and educational use.
 
 - **GitHub**: [@Xenzoro](https://github.com/Xenzoro)
 - **LinkedIn**: [jacobmartinii](https://www.linkedin.com/in/jacobmartinii/)
-- **Portfolio**: [View Live Site]
+- **Portfolio**: https://xenzoro.github.io/XENSITE/
 
 ---
 
