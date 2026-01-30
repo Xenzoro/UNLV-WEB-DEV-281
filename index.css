@@ -263,9 +263,9 @@ body{
 
 
 @media (max-width: 1000px){
-    .about-me-content{
-        height: 500px;
-    }
+    /*.about-me-content{*/
+    /*    height: 500px;*/
+    /*}*/
     .skills{
         height: auto;
     }
