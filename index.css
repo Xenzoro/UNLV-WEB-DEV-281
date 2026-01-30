@@ -281,18 +281,18 @@ body{
     }
 
     /* Start reducing navbar at medium viewport */
-    .navbar{
-        font-size: 1rem;
-        height: auto;
-        min-height: 15vh;
-        padding: 8px 0;
-    }
+    /*.navbar{*/
+    /*    font-size: 1rem;*/
+    /*    height: auto;*/
+    /*    min-height: 15vh;*/
+    /*    padding: 8px 0;*/
+    /*}*/
 
-    .navbar-container a{
-        font-size: 1.5rem;
-        padding: 8px 20px;
-    }
-}
+/*    .navbar-container a{*/
+/*        font-size: 1.5rem;*/
+/*        padding: 8px 20px;*/
+/*    }*/
+/*}*/
 
 /*@media (max-width: 768px) {*/
 /*    .navbar-container{*/
