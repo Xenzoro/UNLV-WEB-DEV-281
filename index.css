@@ -1,13 +1,17 @@
+/* Reset default browser styling for consistent appearance across browsers */
 *{
     padding : 0;
     margin : 0;
     box-sizing : border-box;
 }
+
+/* Set global font and background color for the entire page */
 body{
     font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',Arial, sans-serif;
     background-color: #27add8;
 }
 
+/* Navbar: sticky navigation bar that stays at top when scrolling */
 .navbar{
     align-content: center;
     background-color: #27add8;
@@ -18,6 +22,8 @@ body{
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
+
+/* Container for navbar links - uses flexbox to center and wrap items */
 .navbar-container{
     display: flex;
     flex-direction: row;
@@ -29,6 +35,7 @@ body{
     flex-wrap: wrap;
 }
 
+/* Style for individual navbar links - button-like appearance */
 .navbar-container a{
     text-decoration: none;
     color: #c3d6dd;
@@ -42,6 +49,7 @@ body{
     white-space: nowrap;
 }
 
+/* Hover effect: lifts button and changes colors for interactivity */
 .navbar-container a:hover{
     background-color: #27add8;
     color: #090808;
@@ -50,9 +58,11 @@ body{
     box-shadow: 0 5px 15px rgba(39, 173, 216, 0.4);
 }
 
+/* Active state: slight press effect when clicking */
 .navbar-container a:active{
     transform: translateY(-1px);
 }
+/* Hero section: main landing area with introduction */
 .hero{
     background-color: #28282b;
     text-align: center;
@@ -63,11 +73,10 @@ body{
     color: #c3d6dd;
     height: 80vh;
     align-content: center;
-
-
 }
-.hero h1{
 
+/* Hero heading: uses clamp() for responsive font sizing between min and max values */
+.hero h1{
     font-size: clamp(2rem,6vw,4rem);
     max-width: 90ch;
     width: 90%;
@@ -75,8 +84,9 @@ body{
     white-space: normal;
     overflow-wrap: break-word;
 }
-.hero p{
 
+/* Hero paragraph: descriptive text with responsive sizing */
+.hero p{
     font-size: clamp(1rem, 2.5vw, 2rem);
     max-width: 80ch;
     width: 85%;
@@ -84,6 +94,8 @@ body{
     white-space: normal;
     overflow-wrap: break-word;
 }
+
+/* Profile picture: circular with responsive sizing and maintain aspect ratio */
 .selfie{
     display: block;
     width: clamp(450px, 45vw, 550px);
@@ -94,6 +106,7 @@ body{
     margin: 20px auto;
 }
 
+/* About Me section: contains biography information */
 .about-me{
     min-height: 35vh;
     text-align: center;
@@ -101,17 +114,22 @@ body{
     overflow: auto;
     padding: 20px 0;
 }
+
+/* Unified styling for all section headers across the page */
 .about-me-header, .skills-header, .music-header, .fav-games-header {
     text-align: center;
     text-transform: uppercase;
     font-size: clamp(2rem, 2.5vw, 3rem);
     margin-top: 0;
     margin-bottom: 10rem;
-
 }
+
+/* Extra top margin for about me header to create separation from hero section */
 .about-me-header{
     margin-top: 3rem;
 }
+
+/* Content box for about me text - dark background with rounded corners */
 .about-me-content{
     background-color: #28282b;
     height: 30vh;
@@ -125,10 +143,13 @@ body{
     white-space: normal;
     overflow-wrap: break-word;
 }
+
+/* Padding inside the content box for breathing room */
 .about-me-content p{
     padding: 3rem;
 }
 
+/* Skills section: displays technical skills in card format */
 .skills{
     font-size: 1.5rem;
     align-content: flex-start;
@@ -150,7 +171,7 @@ body{
     margin: 0 0 40px 0;
 }
 
-/* Unified card styling */
+/* Unified card styling - works for skills, music, and games */
 .card{
     display: flex;
     flex-direction: column;
@@ -167,11 +188,13 @@ body{
     cursor: pointer;
 }
 
+/* Hover effect: cards lift up and grow slightly to show interactivity */
 .card:hover{
     transform: translateY(-10px) scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* Standard image sizing for cards - square with rounded corners */
 .card img{
     width: 150px;
     height: 150px;
@@ -182,23 +205,30 @@ body{
     border-radius: 10px;
 }
 
+/* Style Font Awesome icons in skill cards to match image dimensions */
+.skills .card i{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px auto;
+    color: #000000;
+    font-size: 150px;
+}
+
+/* Remove default link styling for YouTube links in music cards */
 .yt-link, .yt-link h3, .yt-link p{
     text-decoration: none;
     color: #28282b;
 }
 
-/* Special sizing for JS icon */
-#js-card img{
-    width: 110px;
-    object-fit: contain;
-}
-
-
-/* Make LBP cover its card fully */
+/* Make LBP cover its card fully by using cover instead of contain */
 .card img[src$="lbp.jpg"], .card img[alt*="LBP" i] {
     object-fit: cover;
 }
 
+/* Music and favorite games sections: dark backgrounds to alternate with light sections */
 .music, .fav-games{
     background-color: #28282b;
     min-height: 50vh;
@@ -208,11 +238,13 @@ body{
     justify-content: center;
     padding: 20px 0;
 }
+
+/* Light colored headers for visibility on dark backgrounds */
 .music-header, .fav-games-header{
     color: #c3d6dd;
 }
 
-/* Contact section styling */
+/* Contact section: final section with social media links */
 .contact{
     background-color: #27add8;
     min-height: 30vh;
@@ -224,12 +256,14 @@ body{
     padding: 40px 20px;
 }
 
+/* Contact header: matches other section headers */
 .contact-header{
     text-transform: uppercase;
     font-size: clamp(2rem, 2.5vw, 3rem);
     margin-bottom: 2rem;
 }
 
+/* Container for contact icons (GitHub and LinkedIn) */
 .contact-icons{
     display: flex;
     gap: 60px;
@@ -237,6 +271,7 @@ body{
     align-items: center;
 }
 
+/* Individual contact link styling: icon with label below */
 .contact-link{
     display: flex;
     flex-direction: column;
@@ -246,22 +281,26 @@ body{
     transition: transform 0.3s ease;
 }
 
+/* Hover effect: slight scale up for interactivity */
 .contact-link:hover{
     transform: scale(1.1);
 }
 
+/* Contact icon images: consistent sizing */
 .contact-link img{
     width: 80px;
     height: 80px;
     margin-bottom: 10px;
 }
 
+/* Contact link labels: bold for emphasis */
 .contact-link p{
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-
+/* Responsive Design: Medium screens (tablets and smaller laptops) */
+/* Below 1000px width - make heights auto to prevent overflow issues */
 @media (max-width: 1000px) {
     .about-me-content {
         height: auto;
@@ -280,68 +319,51 @@ body{
 
     }
 
+    /* Reduce header margins to save space on smaller screens */
     .fav-games-header, .music-header, .skill-header, .about-me-header {
         margin-bottom: 2rem;
     }
 }
-    /* Start reducing navbar at medium viewport */
-    /*.navbar{*/
-    /*    font-size: 1rem;*/
-    /*    height: auto;*/
-    /*    min-height: 15vh;*/
-    /*    padding: 8px 0;*/
-    /*}*/
 
-/*    .navbar-container a{*/
-/*        font-size: 1.5rem;*/
-/*        padding: 8px 20px;*/
-/*    }*/
-/*}*/
-
-/*@media (max-width: 768px) {*/
-/*    .navbar-container{*/
-/*        gap: 10px;*/
-/*        padding: 0 10px;*/
-/*    }*/
-
-/*    .navbar-container a{*/
-/*        font-size: 1rem;*/
-/*        padding: 8px 15px;*/
-/*    }*/
-/*}*/
-
+/* Responsive Design: Small screens (mobile phones) */
+/* Below 600px width - scale down card and image sizes */
 @media (max-width: 600px) {
+    /* Shrink card images to fit mobile screens */
     .card img{
         width: 72px;
         height: 72px;
     }
 
+    /* Reduce card size for mobile layout */
     .card{
         max-width: 160px;
         padding: 12px;
         margin: 0.5rem;
     }
 
-    /* Make selfie not shrink too small by using min width */
+    /* Prevent selfie from shrinking too small on mobile */
     .selfie{
         width: clamp(250px, 40vw, 450px);
     }
 
+    /* Scale down contact icons for mobile */
     .contact-link img{
         width: 60px;
         height: 60px;
     }
 
+    /* Reduce spacing between contact icons */
     .contact-icons{
         gap: 40px;
     }
 
-    /* Navbar responsive styling for very small screens */
+    /* Compact navbar for mobile screens */
     .navbar-container{
         gap: 8px;
         padding: 0 10px;
     }
 
+    /* Smaller navbar text and buttons for mobile */
     .navbar-container a{
         font-size: 0.9rem;
         padding: 6px 10px;
