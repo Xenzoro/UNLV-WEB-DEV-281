@@ -1,244 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Jake's portfolio site</title>
-    <!-- Link to external CSS stylesheet -->
-    <link rel="stylesheet" href="index.css">
-    <!-- Google Fonts preconnect for faster loading -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Import Nunito Sans and Roboto Mono fonts from Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for skill icons (Java, HTML, CSS, JavaScript) -->
-    <script src="https://kit.fontawesome.com/c5e0916d68.js" crossorigin="anonymous"></script>
-    <!-- Favicon for browser tab icon -->
-    <link rel="icon" type="image/png" href="./icons/logo.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intel: Sustainability Through the Ages</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-</head>
+  <body>
 
-<body>
-
-<!-- Navigation bar: sticky menu that stays at top while scrolling -->
-<section class="navbar">
-    <div class="navbar-container">
-        <!-- Anchor links to jump to different sections of the page -->
-        <a href="#about-me"> About Me </a>
-        <a href="#skills"> Skills </a>
-        <a href="#Music"> Favorite Songs </a>
-        <a href="#fav-games"> Favorite Games </a>
-        <a href="#contact"> Contact </a>
-    </div>
-</section>
-
-    <!-- Hero section: landing page with profile picture and introduction -->
-    <section class="hero">
-        <img class="selfie" src="icons/selfie.jpg" alt="Self portrait of Jacob">
-
-        <h1> Welcome to my Portfolio Site! </h1>
-        <p> Hi! My name is Jacob Martinez, I am an aspiring Software Engineer that
-            is currently expanding my interests into web development.
-            In this site you will find my skills, favorite games and songs and ways to contact me!
-        </p>
-    </section>
-
-        <!-- About Me section: biography and personal information -->
-        <section id="about-me" class="about-me">
-            <header class="about-me-header">
-                <h2> About Me </h2>
-            </header>
-            <div class="about-me-content">
-                <p> A little about me is im studying Computer Science and Information Systems at UNLV.
-                 I have a passion for technology and love learning about new advancements in the field.
-                 In my free time I enjoy listening to music, playing video games, and exploring new technologies.
-                </p>
-            </div>
-        </section>
-
-    <!-- Skills section: display programming languages and technologies with icons -->
-    <section id="skills" class="skills">
-        <header class="skills-header">
-            <h2> Skills </h2>
-        </header>
-
-        <div class="cards-container">
-            <!-- C++ skill card with image icon -->
-            <div class="card">
-                <img src="icons/c++.png" alt="C++ logo">
-                <h3> C++ </h3>
-            </div>
-
-            <!-- Java skill card with Font Awesome icon -->
-            <div class="card">
-                <i class="fa-brands fa-java fa-7x"></i>
-                <h3> Java </h3>
-            </div>
-
-            <!-- HTML skill card with Font Awesome icon -->
-            <div class="card">
-                <i class="fa-brands fa-html5 fa-7x"></i>
-                <h3> HTML </h3>
-            </div>
-
-            <!-- CSS skill card with Font Awesome icon -->
-            <div class="card">
-                <i class="fa-brands fa-css3-alt fa-7x"></i>
-                <h3> CSS </h3>
-            </div>
-
-            <!-- JavaScript skill card with Font Awesome icon -->
-            <div class="card">
-                <i class="fa-brands fa-js fa-7x"></i>
-                <h3> JavaScript </h3>
-            </div>
-        </div>
-
-    </section>
-<!-- Favorite Songs section: clickable cards linking to YouTube music videos -->
-<section id="Music" class="music">
-    <header class="music-header">
-        <h2> Favorite Songs </h2>
+    <!-- ==================== HERO SECTION ==================== -->
+    <header class="hero">
+      <div class="hero-content">
+        <img src="img/intel-header-logo.svg" alt="Intel Logo" class="hero-logo" />
+        <h1 class="hero-title">Intel Sustainability Through the Ages</h1>
+          <p class="hero-subtitle">
+            Explore Intel's journey through innovation and environmental responsibility
+          </p>
+      </div>
     </header>
+      <hr class="separator" />
 
-    <div class="cards-container">
-        <!-- Each card is a link to the song on YouTube with album art and song info -->
-        <div class="card">
-            <a href="https://youtu.be/7xzU9Qqdqww?si=bVafsijklPA8_9LK" target="_blank" class="yt-link">
-            <img src="icons/poh.jpg" alt="Pursuit of Happiness cover">
-            <h3>Pursuit of Happiness</h3>
-            <p>Kid Cudi</p>
-            </a>
+    <main class="timeline-section">
+
+      <!-- Progress Indicator -->
+        <div class="progress-container" aria-hidden="true">
+          <div class="progress-bar" id="timelineProgress" role="progressbar"
+               aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+          </div>
         </div>
 
-        <div class="card">
-            <a href="https://youtu.be/hv4UsNih-_c?si=vU4qi01KkGlnLI0k" target="_blank" class="yt-link">
-            <img src="icons/bleue.jpg" alt="Bleue cover">
-            <h3>Bleue</h3>
-            <p>Wale The Sage</p>
-            </a>
-        </div>
+      <section class="timeline-container" aria-label="Intel Sustainability Timeline">
 
-        <div class="card">
-            <a href="https://youtu.be/QrVl7mgVSg0?si=iuVHGmMx1vqRJ9_3" target="_blank" class="yt-link">
-            <img src="icons/prune.jpg" alt="Prune You Talk Funny cover">
-            <h3>Prune You Talk Funny</h3>
-            <p>Gus Dapperton</p>
-            </a>
-        </div>
+        <!-- ========== CARD: 1968 ========== -->
+        <article class="timeline-card" data-year="1968">
+          <img src="img/ai0.png" alt="Intel Founded 1968" class="card-image" />
+          <header class="card-content">
+            <h2 class="card-year">1968</h2>
+            <h3 class="card-title">Intel Founded</h3>
+          </header>
+          <aside class="card-details">
+            <p>
+              Robert Noyce and Gordon Moore rename the newly formed company
+              NM Electronics to Intel Corporation, laying the foundation for
+              decades of technological innovation.
+            </p>
+          </aside>
+        </article>
 
-        <div class="card">
-            <a href="https://youtu.be/Chb1GgyNE4Q?si=3GrPdREoy674xI2x" target="_blank" class="yt-link">
-            <img src="icons/woopie.jpg" alt="Woopie cover">
-            <h3>Woopie</h3>
-            <p>Still Woozy</p>
-            </a>
-        </div>
+        <!-- ========== CARD: 1971 ========== -->
+        <article class="timeline-card" data-year="1971">
+          <img src="img/ai1.png" alt="First Microprocessor 1971" class="card-image" />
+          <header class="card-content">
+            <h2 class="card-year">1971</h2>
+            <h3 class="card-title">First Microprocessor</h3>
+          </header>
+          <aside class="card-details">
+            <p>
+              Intel debuts the 4004, the world's first commercial microprocessor,
+              igniting the microprocessor revolution and propelling the future
+              of computing devices.
+            </p>
+          </aside>
+        </article>
 
-        <div class="card">
-            <a href="https://youtu.be/hWOB5QYcmh0?si=_U8zsGqxXLLdgPWb" target="_blank" class="yt-link">
-            <img src="icons/day1.jpg" alt="Day1 cover">
-            <h3>Day1</h3>
-            <p>HONNE</p>
-            </a>
-        </div>
+        <!-- ========== CARD: 1978 ========== -->
+        <article class="timeline-card" data-year="1978">
+          <img src="img/ai2.png" alt="8086 Processor 1978" class="card-image" />
+          <header class="card-content">
+            <h2 class="card-year">1978</h2>
+            <h3 class="card-title">8086 Processor</h3>
+          </header>
+          <aside class="card-details">
+            <p>
+              Launch of the 8086 processor, establishing the x86 architecture
+              that drives countless PCs and servers in the modern era.
+            </p>
+          </aside>
+        </article>
 
-        <div class="card">
-            <a href="https://youtu.be/4t-zLt3uYcI?si=IumrDqSEOTkO5RGs" target="_blank" class="yt-link">
-            <img src="icons/howmuchis.jpg" alt="How Much Is ****? cover">
-            <h3>How Much Is W***?</h3>
-            <p>Dominic Fike</p>
-            </a>
-        </div>
+        <!-- ========== CARD: 1985 ========== -->
+        <article class="timeline-card" data-year="1985">
+          <img src="img/ai3.png" alt="386 Processor 1985" class="card-image" />
+          <header class="card-content">
+            <h2 class="card-year">1985</h2>
+            <h3 class="card-title">386 Processor</h3>
+          </header>
+          <aside class="card-details">
+            <p>
+              Intel introduces the 386 processor with 32-bit architecture,
+              ushering in a new era of performance and multitasking for
+              personal computers.
+            </p>
+          </aside>
+        </article>
 
-        <div class="card">
-            <a href="https://youtu.be/J9NQFACZYEU?si=OktQtaneUyWvHkZV" target="_blank" class="yt-link">
-            <img src="icons/outside.jpg" alt="Outside cover">
-            <h3>Outside</h3>
-            <p>Calvin Harris</p>
-            </a>
-        </div>
+        <!-- ========== CARD: 2006 ========== -->
+        <article class="timeline-card" data-year="2006">
+          <img src="img/1.jpg" alt="Peak GHG Emissions 2006" class="card-image" />
+          <header class="card-content">
+            <h2 class="card-year">2006</h2>
+            <h3 class="card-title">Peak GHG Emissions</h3>
+          </header>
+          <aside class="card-details">
+            <p>
+              This year marks Intel's highest annual greenhouse gas emissions
+              for operations. Over subsequent years, Intel invests heavily in
+              chemical abatement, renewable energy, and energy-efficient
+              manufacturing to reverse this trend.
+            </p>
+          </aside>
+        </article>
 
-        <div class="card">
-            <a href="https://youtu.be/YRGtgkN-8QU?si=7K8w0J0VWiIeOB3N" target="_blank" class="yt-link">
-                <img src="icons/roommates.jpg" alt="Roommates cover">
-                <h3>Roommates</h3>
-                <p>Malcom Todd</p>
-            </a>
-        </div>
+        <!-- ========== CARD: 2020 ========== -->
+        <article class="timeline-card" data-year="2020">
+          <img src="img/2.jpg" alt="RISE Strategy 2020" class="card-image" />
+          <header class="card-content">
+            <h2 class="card-year">2020</h2>
+            <h3 class="card-title">RISE Strategy</h3>
+          </header>
+          <aside class="card-details">
+            <p>
+              Intel launches its RISE (Responsible, Inclusive, Sustainable,
+              Enabling) strategy and 2030 goals, aiming to drive industry-wide
+              progress on climate action, water stewardship, and waste reduction.
+            </p>
+          </aside>
+        </article>
 
+        <!-- ========== CARD: 2022 ========== -->
+        <article class="timeline-card" data-year="2022">
+          <img src="img/3.jpg" alt="Net-Zero By 2040" class="card-image" />
+          <header class="card-content">
+            <h2 class="card-year">2022</h2>
+            <h3 class="card-title">Net-Zero By 2040</h3>
+          </header>
+          <aside class="card-details">
+            <p>
+              Intel announces its commitment to achieve net-zero greenhouse
+              gas emissions (Scope 1 and 2) across its global operations
+              by 2040, building on years of environmental initiatives.
+            </p>
+          </aside>
+        </article>
 
-    </div>
-</section>
+        <!-- ========== CARD: 2023 ========== -->
+        <article class="timeline-card" data-year="2023">
+          <img src="img/4.jpg" alt="Renewable Electricity 2023" class="card-image" />
+          <header class="card-content">
+            <h2 class="card-year">2023</h2>
+            <h3 class="card-title">Renewable Electricity</h3>
+          </header>
+          <aside class="card-details">
+            <p>
+              The company achieves 99% renewable electricity usage worldwide,
+              helping to drastically lower carbon emissions and driving progress
+              toward Intel's long-term sustainability goals.
+            </p>
+          </aside>
+        </article>
 
-    <!-- Favorite Games section: showcases personal favorite video games -->
-    <section id="fav-games" class="fav-games">
-        <header class="fav-games-header">
-            <h2> Favorite Games </h2>
-        </header>
+        <!-- ========== CARD: 2024 ========== -->
+        <article class="timeline-card" data-year="2024">
+          <img src="img/1.jpg" alt="Sustainability Summit 2024" class="card-image" />
+          <header class="card-content">
+            <h2 class="card-year">2024</h2>
+            <h3 class="card-title">Sustainability Summit</h3>
+          </header>
+          <aside class="card-details">
+            <p>
+              Intel hosts its first Sustainability Summit, uniting suppliers,
+              government officials, and industry leaders to collaborate on
+              next-generation sustainable semiconductor manufacturing.
+            </p>
+          </aside>
+        </article>
 
-        <div class="cards-container">
-            <!-- Each card displays game cover art, title, and platform/year info -->
-            <div class="card">
-                <img src="icons/lbp.jpg" alt="Little Big Planet cover">
-                <h3>Little Big Planet 2</h3>
-                <p>PS3 / PS4 / 2011</p>
-            </div>
+      </section>
 
-            <div class="card">
-                <img src="icons/minecraft.png" alt="Minecraft cover">
-                <h3>Minecraft</h3>
-                <p>All Platforms / 2009</p>
-            </div>
+      <!-- ==================== FOOTER ==================== -->
+      <footer class="scroll-hint">
+        <p>Scroll to view timeline | Hover over cards to learn more!</p>
+      </footer>
 
-            <div class="card">
-                <img src="icons/terraria.webp" alt="Terraria cover">
-                <h3>Terraria</h3>
-                <p>PlayStation / Xbox / PC / 2011</p>
-            </div>
+    </main>
 
-            <div class="card">
-                <img src="icons/destiny.png" alt="Destiny cover">
-                <h3>Destiny 2</h3>
-                <p>PlayStation / Xbox / PC / 2017</p>
-            </div>
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script src="script.js"></script>
 
-            <div class="card">
-                <img src="icons/dao.png" alt="Dragon Age Origins cover">
-                <h3>Dragon Age Origins</h3>
-                <p>PlayStation / Xbox / PC / 2009</p>
-            </div>
-
-            <div class="card">
-                <img src="icons/masseffect.jpg" alt="Mass effect Legendary Edition cover">
-                <h3>Mass Effect Legendary Edition</h3>
-                <p>PlayStation / Xbox / PC / 2021</p>
-            </div>
-        </div>
-    </section>
-
-<!-- Contact section: provides links to GitHub and LinkedIn profiles -->
-<section id="contact" class="contact">
-    <header class="contact-header">
-        <h2>Contact Info</h2>
-    </header>
-
-    <div class="contact-icons">
-        <!-- GitHub profile link with icon -->
-        <a href="https://github.com/Xenzoro" target="_blank" class="contact-link">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
-            <p>GitHub</p>
-        </a>
-
-        <!-- LinkedIn profile link with icon -->
-        <a href="https://www.linkedin.com/in/jacobmartinii/" target="_blank" class="contact-link">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
-            <p>LinkedIn</p>
-        </a>
-    </div>
-</section>
-
-
-
-
-</body>
+  </body>
 </html>
