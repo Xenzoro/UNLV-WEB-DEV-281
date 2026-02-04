@@ -61,7 +61,7 @@ body {
 
 /* Main hero title */
 .hero-title {
-  font-size: clamp(1.5rem, 7vw, 10rem);
+  font-size: clamp(1.5rem, 7vw, 5rem);
     wrap-option: wrap;
   color: #ffffff;
   margin-bottom: 1rem;
